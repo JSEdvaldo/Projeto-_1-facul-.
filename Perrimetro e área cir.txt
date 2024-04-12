@@ -1,0 +1,23 @@
+/* Calcular o peímetro e a a area de uma circuferencia. */
+
+#include <cmath>
+#include <iostream>
+using namespace std;
+
+int main(){
+
+    int raio;
+    float perimetro, area, pi;
+    pi = 3.14159;
+    
+    cout << "Qual o raio da circunferencia: " << endl;
+    cin >> raio;
+    
+    perimetro = 2 * pi * raio;
+    area = pi * pow(raio,2);
+    
+    cout << " O  perimetro da circunferencia é" << raio << "e o perimetro é" << perimetro << endl;
+    cout << "E a área é" << area;
+        
+        /* Deu CERTO POHAAA*/
+}

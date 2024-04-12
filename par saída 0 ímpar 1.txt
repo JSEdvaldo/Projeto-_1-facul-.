@@ -1,0 +1,13 @@
+/* Exemplo 1: escreva um programa que leia um número inteiro e imprima, 0 se o número for par e 1 se o
+número for ímpar.*/
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    
+    int inteiro;
+    cout << " Escreva um número inteiro: " << endl;
+    cin >> inteiro;
+    
+    cout << inteiro % 2;

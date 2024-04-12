@@ -1,0 +1,42 @@
+#include <iostream>
+
+using namespace std;
+
+
+void ler_vet(int vetor[], int tam){
+    for(int i = 0; i < tam; i++){
+        cout << "Digite o " << i+1 << " valor: " << endl;
+        cin >> vetor[i];
+    }
+}
+
+void imprimir(int vetor[], int tam){
+    for(int i = 0; i < tam; i++){
+    cout << vetor [i] << " ";
+        
+    }
+}
+
+void maior(int vetor[], int tam,int contador){
+    for(int i = 0; i < tam; i++){
+        
+    if(vetor[i] > contador){
+        contador = vetor[i];
+        }
+    }
+    cout << " O maior numero e " << contador;
+}
+
+
+int main(){
+
+const int tam = 10;
+
+int vetor[tam];
+int contador = 0;
+
+ler_vet(vetor,tam);
+imprimir(vetor,tam);
+cout << endl;
+maior(vetor,tam,contador);
+}

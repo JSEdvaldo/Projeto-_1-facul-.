@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+void ler_vetor(int vet[], int tam, int contador){
+    for(int i =0 ; i < tam; i++){
+        cout << "Digite o" << i+1 << "valor" << endl;    
+        cin >> vet[i];
+        if(vet[i] % 2 == 0){
+            cout << contador++;
+        }
+    }
+    
+}
+
+
+
+int main(){
+
+    const int tam = 10;
+    int contador = 1;
+    int vetor[tam];
+    ler_vetor(vetor,tam,contador);
+
+}

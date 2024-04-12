@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+
+
+void ler_funcao(double vetor1[], int tam){
+   for(int i = 0; i < tam;i++){
+    cout << "Digite o "<< i+1 << "valor"<< endl;
+    cin >> vetor1[i];
+    }
+}
+
+void imprimir(double vetor1[], int tam){
+for(int i = 0 ; i < tam ; i++){
+    cout << vetor1[i] << " ";
+ 
+   }
+}
+
+void calcularQuadrado(double vetor[],int tam, double resul[]) {
+    for (int i = 0; i < tam; ++i) {
+        resul[i] = vetor[i] * vetor[i];
+    }
+}
+
+
+int main(){
+
+
+const int tam = 10;
+double vet1[tam];
+double resul[tam];
+
+ler_funcao(vet1,tam);
+imprimir(vet1,tam);
+calcularQuadrado(vet1,tam,resul);
+cout << endl;
+imprimir(resul,tam);
+
+}

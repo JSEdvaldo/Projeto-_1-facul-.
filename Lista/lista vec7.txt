@@ -1,0 +1,67 @@
+#include <iostream>
+
+using namespace std;
+
+void ler_vetor(int v1[], int tam){
+    for(int i = 0 ; i < tam; i++){
+        cout << " Digite "<< i+1 << " valor" << endl;
+        cin >> v1[i];
+    }
+}
+
+void diferenca(int v1[], int v2[],int v3[],int tam){
+    for(int i = 0; i < tam; i++){
+        v3[i] = v1[i] - v2[i];
+        
+    }
+}
+void adicao(int v1[], int v2[],int v3[], int tam){
+    for(int i = 0; i < tam ; i++){
+        v3[i] = v1[i] + v2[i];
+    }    
+}
+
+void multiplicao(int v1[], int v2[],int v3[], int tam){
+    for(int i = 0; i < tam ; i++){
+        v3[i] = v1[i] * v2[i];
+    }
+}
+
+void imprimir(int v1[], int tam){
+    for(int i = 0 ; i < tam; i++){
+        cout << v1[i] << " ";
+    }
+}
+
+int main(){
+    
+    const int tam = 3;
+        
+    int vetor1[tam];
+    int vetor2[tam];
+    int subtra[tam];
+    int soma[tam];
+    int veses[tam];
+    
+    ler_vetor(vetor1,tam);
+    ler_vetor(vetor2,tam);
+    diferenca(vetor1,vetor2,subtra,tam);
+    adicao(vetor1,vetor2,soma,tam);
+    multiplicao(vetor1,vetor2,veses,tam);
+    
+    imprimir(vetor1,tam);
+    cout << endl;
+    imprimir(vetor2,tam);
+    cout << endl;
+    diferenca(vetor1,vetor2,subtra,tam);
+    imprimir(subtra,tam);
+    adicao(vetor1,vetor2,soma,tam);
+    cout << endl;
+    imprimir(soma,tam);
+    cout << endl;
+    imprimir(veses,tam);
+    
+    
+   
+    
+}

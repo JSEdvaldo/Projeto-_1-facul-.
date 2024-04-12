@@ -1,0 +1,21 @@
+/* Exemplo 2: escreva um programa que leia 3 números inteiros e calcule a soma, média, e produto. */
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    
+    float media;
+    int soma;
+    int n1, n2, n3;
+    
+    cout << "Digite 3 números número: ";
+    cin >> n1 >> n2 >> n3;
+    
+    soma = n1 + n2 + n3;
+    media = soma / 3;
+    
+    cout << "sua Média é : " << media;
+    
+    
+}

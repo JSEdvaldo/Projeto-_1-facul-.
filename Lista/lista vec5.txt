@@ -1,0 +1,32 @@
+#include <iostream>
+
+using namespace std;
+
+void gabarito_aluno(char aluno[], int tam){
+    for(int i =0; i< tam ; i++){
+        cout << "Digite a resposta da " << i+1 << " questao: "<< endl;
+        cin >> aluno[i];
+    }
+}
+
+void verificao(char aluno[], int tam, char gabarito[], int tam1){
+    for(int i = 0 ; i < tam; i++){
+        if(aluno[i] == gabarito[i]){
+            cout << "Parabens voce acertou. " << aluno[i] << endl;
+        }else{
+            cout << "Voce errou, resposta correta e: " << gabarito [i] << endl;
+        }
+    }
+}
+
+int main(){
+    const int tam = 10;
+    const int tam1 = 10;
+    char gabarito[tam] = {'A','D','C','E','D','C','A','E','D','D'};
+
+    char aluno[tam];
+    
+    gabarito_aluno(aluno,tam);
+    
+    verificao(aluno,tam,gabarito,tam1);
+}
